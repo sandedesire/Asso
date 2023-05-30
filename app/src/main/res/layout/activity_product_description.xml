@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Description"
+    android:layout_margin="5dp">
+
+    <ImageView
+
+        android:id="@+id/productImage"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/piano"
+        />
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:layout_alignRight="@+id/productImage"
+        android:textSize="100dp"
+        android:text="Price"
+        android:textColor="@color/green" />
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:layout_alignLeft="@+id/productImage"
+        android:textSize="34dp"
+        android:text="Price"
+         />
+    <TextView
+        android:id="@+id/qtyinstockTextProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productPrice"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="50dp"
+        android:textSize="34dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productPrice"
+        android:layout_toRightOf="@id/qtyinstockTextProduct"
+        android:text="---"
+        android:textSize="34dp"
+
+        />
+    <TextView
+        android:id="@+id/qtyAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qtyinstockTextProduct"
+        android:text="0"
+        android:textSize="34dp"
+        android:layout_marginLeft="100dp"
+
+        />
+    <Button
+        android:onClick="add_subtract"
+        android:id="@+id/addQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@id/qtyinstockValueProduct"
+        android:layout_toRightOf="@id/qtyAdded"
+        android:layout_marginLeft="5dp"
+        />
+    <Button
+        android:onClick="add_subtract"
+        android:id="@+id/substractQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_below="@id/qtyinstockValueProduct"
+        android:layout_toRightOf="@id/addQty"
+        android:layout_marginLeft="5dp"
+        />
+
+    <Button
+        android:onClick="toCart"
+        android:id="@+id/addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_below="@id/addQty"
+
+        />
+    <Button
+        android:onClick="emptyCart"
+        android:id="@+id/emptyCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty Cart"
+        android:layout_below="@id/addToCart"
+
+        />
+
+    <include layout="@layout/bottomwelcomepage"/>
+
+
+
+</RelativeLayout>

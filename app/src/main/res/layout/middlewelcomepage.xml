@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".WelcomeScreen"
+    android:layout_gravity="center_horizontal">
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/bed"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bed"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="Bed"
+        />
+
+
+    <TextView
+        android:id="@+id/priceBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameBed"
+        android:layout_alignRight="@+id/bed"
+        android:textSize="34dp"
+        android:text="Price"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/nameBed"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bed"
+        android:text="2 places bed"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/qtyinstockTextBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBed"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/qtyinstockTextBed"
+        android:text="---"
+        android:layout_below="@+id/nameBed"
+
+        />
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/ball"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ball"
+        android:layout_below="@id/qtyinstockTextBed"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="Ball"
+        />
+
+
+
+    <TextView
+        android:id="@+id/nameBall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ball"
+        android:text="Professional Football"
+
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/priceBall"
+        android:textSize="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameBall"
+        android:layout_alignRight="@+id/ball"
+        android:layout_marginTop="300dp"
+        android:text="Price"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBall"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameBall"
+
+
+        android:layout_toRightOf="@id/qtyinstockTextBall"
+        android:text="---" />
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/car"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/car"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="car"
+        />
+
+    <TextView
+        android:id="@+id/nameCar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car"
+        android:layout_marginLeft="50dp"
+
+        android:layout_marginTop="-25dp"
+        android:text="My Car" />
+    <TextView
+        android:id="@+id/priceCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameCar"
+        android:layout_alignRight="@+id/ball"
+        android:layout_marginTop="300dp"
+        android:text="Price"
+        android:textSize="34dp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameCar"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameCar"
+
+        android:layout_toRightOf="@id/qtyinstockTextCar"
+        android:text="---" />
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/jersay"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/qtyinstockTextCar"
+        android:src="@drawable/jersay"
+        android:contentDescription="jersay"
+        />
+
+    <TextView
+        android:id="@+id/nameJersay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jersay"
+        android:layout_marginLeft="50dp"
+        android:text="My Jersay" />
+
+    <TextView
+        android:id="@+id/priceJersay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameJersay"
+        android:layout_alignRight="@+id/ball"
+        android:layout_marginTop="300dp"
+        android:text="Price"
+        android:textSize="34dp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextJersay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameJersay"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueJersay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameJersay"
+
+        android:layout_toRightOf="@id/qtyinstockTextCar"
+        android:text="---" />
+
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/phones"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/phones"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/bed"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="phones"
+        />
+
+    <TextView
+        android:id="@+id/namePhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phones"
+        android:layout_marginLeft="250dp"
+        android:text="My Jersay" />
+
+    <TextView
+        android:id="@+id/pricePhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/namePhones"
+        android:layout_alignRight="@+id/phones"
+
+        android:text="Price"
+        android:textSize="34dp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextPhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namePhones"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="250dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValuePhones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namePhones"
+
+
+        android:layout_toRightOf="@id/qtyinstockTextPhones"
+        android:text="---" />
+
+
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/piano"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/piano"
+        android:layout_below="@+id/qtyinstockValuePhones"
+        android:layout_toRightOf="@+id/bed"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="piano"
+        />
+
+    <TextView
+        android:id="@+id/namePiano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/piano"
+        android:layout_marginLeft="250dp"
+        android:text="My Jersay" />
+
+    <TextView
+        android:id="@+id/pricePiano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/namePiano"
+        android:layout_alignRight="@+id/phones"
+
+        android:text="Price"
+        android:textSize="34dp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextPiano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namePiano"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="250dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValuePiano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namePiano"
+
+
+        android:layout_toRightOf="@id/qtyinstockTextPhones"
+        android:text="---" />
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/shoes"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shoes"
+        android:layout_below="@+id/qtyinstockValuePiano"
+        android:layout_toRightOf="@+id/bed"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="shoes"
+
+        />
+
+    <TextView
+        android:id="@+id/nameShoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoes"
+        android:layout_marginLeft="250dp"
+        android:text="My Jersay" />
+
+    <TextView
+        android:id="@+id/priceShoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameShoes"
+        android:layout_alignRight="@+id/phones"
+
+        android:text="Price"
+        android:textSize="34dp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextShoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameShoes"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="250dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueShoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameShoes"
+
+
+        android:layout_toRightOf="@id/qtyinstockTextPhones"
+        android:text="---" />
+
+
+    <ImageView
+        android:onClick="toProductDescription"
+        android:id="@+id/tv"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tv"
+        android:layout_below="@+id/qtyinstockValueShoes"
+        android:layout_toRightOf="@+id/bed"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="television"
+        />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_marginLeft="250dp"
+        android:text="My Jersay"
+        android:contentDescription=" "
+        />
+
+    <TextView
+        android:id="@+id/priceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameTv"
+        android:layout_alignRight="@+id/phones"
+
+        android:text="Price"
+        android:textSize="34dp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/qtyinstockTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTv"
+        android:text="Quantity in stock:"
+        android:layout_marginLeft="250dp"/>
+
+    <TextView
+        android:id="@+id/qtyinstockValueTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTv"
+
+
+        android:layout_toRightOf="@id/qtyinstockTextPhones"
+        android:text="---" />
+
+
+
+
+</RelativeLayout>
