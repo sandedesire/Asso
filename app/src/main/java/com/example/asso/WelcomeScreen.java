@@ -34,7 +34,8 @@ public class WelcomeScreen extends AppCompatActivity {
         Intent intent = getIntent();
 
         username = findViewById(R.id.username);
-        username.setText( intent.getStringExtra("name").toString());
+        //username.setText(intent.getStringExtra("name").toString());
+
         products = new DB_Products(this);
 
         priceBed = findViewById(R.id.priceBed);

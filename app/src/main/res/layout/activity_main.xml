@@ -86,7 +86,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="104dp"
         android:layout_marginBottom="135dp"
-        android:text="Login" />
+        android:text="Login"
+        android:backgroundTint="@color/green"/>
 
     <Button
         android:id="@+id/cancel"
@@ -95,8 +96,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="81dp"
-        android:layout_marginBottom="133dp"
-        android:text="Cancel" />
+        android:layout_marginBottom="135dp"
+        android:text="Cancel"
+        android:backgroundTint="@color/red"/>
 
 
 

@@ -20,8 +20,8 @@ public class Product_Description extends AppCompatActivity {
     int productPrice;
 
     int totalPriceInt;
-    int imageID;
-    int qty;
+    String imageID;
+    String qty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,8 @@ public class Product_Description extends AppCompatActivity {
 
         cart = findViewById(R.id.cart);
         productImage.setImageResource(Integer.valueOf(intent.getStringExtra("imgScr")));
-        imageID = Integer.valueOf(intent.getStringExtra("imgScr"));
+        imageID = intent.getStringExtra("imgScr");
+        assert(imageID != null);
         description.setText(intent.getStringExtra("description").toString());
         price.setText(intent.getStringExtra("price") + " $".toString());
         productPrice = Integer.valueOf(intent.getStringExtra("price"));
@@ -107,13 +108,17 @@ public class Product_Description extends AppCompatActivity {
     }
 
     public void toOrderSummary(View view){
-        Intent intent = new Intent(this, Order_Summary.class);
-        qty = Integer.valueOf(totalItems.getText().toString().trim());
-        intent.putExtra("imageScr",imageID);
-        intent.putExtra("qty",qty);
-        intent.putExtra("price",totalPriceInt);
 
-        startActivity(intent);
+            Intent intent = new Intent(this, Order_Summary.class);
+            qty = totalItems.getText().toString().trim();
+            assert(qty != null);
+            intent.putExtra("imageScr", imageID);
+            intent.putExtra("qty", qty);
+
+            intent.putExtra("price", String.valueOf(totalPriceInt));
+            intent.putExtra("itemPrice", price.getText().toString());
+
+            startActivity(intent);
 
 
     }
