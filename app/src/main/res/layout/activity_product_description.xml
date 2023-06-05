@@ -12,7 +12,7 @@
         android:id="@+id/productImage"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:src="@drawable/piano"
         />
     <TextView
@@ -98,6 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Empty Cart"
+
         android:layout_below="@id/addToCart"
 
         />

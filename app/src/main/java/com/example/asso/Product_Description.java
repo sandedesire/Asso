@@ -16,9 +16,12 @@ public class Product_Description extends AppCompatActivity {
     ImageView productImage;
     TextView description,price,qtyInStock,totalItems,totalPrice,qtyAdded;
     Button addBtn,subtractBtn,AddtoCartBtn;
+    ImageView cart;
     int productPrice;
 
     int totalPriceInt;
+    int imageID;
+    int qty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,9 @@ public class Product_Description extends AppCompatActivity {
         totalItems = findViewById(R.id.totalCartItems);
         totalPrice = findViewById(R.id.totalCartPrice);
 
+        cart = findViewById(R.id.cart);
         productImage.setImageResource(Integer.valueOf(intent.getStringExtra("imgScr")));
+        imageID = Integer.valueOf(intent.getStringExtra("imgScr"));
         description.setText(intent.getStringExtra("description").toString());
         price.setText(intent.getStringExtra("price") + " $".toString());
         productPrice = Integer.valueOf(intent.getStringExtra("price"));
@@ -98,6 +103,18 @@ public class Product_Description extends AppCompatActivity {
     public void emptyCart(View view){
         totalItems.setText("");
         totalPrice.setText("" +" $");
+
+    }
+
+    public void toOrderSummary(View view){
+        Intent intent = new Intent(this, Order_Summary.class);
+        qty = Integer.valueOf(totalItems.getText().toString().trim());
+        intent.putExtra("imageScr",imageID);
+        intent.putExtra("qty",qty);
+        intent.putExtra("price",totalPriceInt);
+
+        startActivity(intent);
+
 
     }
 }

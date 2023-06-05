@@ -10,6 +10,8 @@
 
     <ImageView
         android:id="@+id/cart"
+        android:onClick="toOrderSummary"
+        android:contentDescription="CartLogo"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
