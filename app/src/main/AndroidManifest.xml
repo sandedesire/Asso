@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Asso"
         tools:targetApi="31">
+        <service android:name=".AlarmService"/>
         <activity
             android:name=".Order_Summary"
             android:exported="false" />

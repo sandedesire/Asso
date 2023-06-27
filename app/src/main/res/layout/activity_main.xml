@@ -55,6 +55,15 @@
         android:layout_marginTop="400dp"
         android:layout_marginLeft="60dp"
         android:text="No Account?" />
+    <TextView
+        android:id="@+id/forgot_usernameOrPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/no_account"
+
+        android:text="Forgot Username /or Password?" />
 
     <TextView
         android:id="@+id/register"
@@ -65,7 +74,7 @@
         android:layout_marginTop="400dp"
         android:onClick="toRegister"
 
-        android:text="register" />
+        android:text="Register" />
     <TextView
         android:id="@+id/error"
         android:layout_width="wrap_content"
@@ -100,6 +109,24 @@
         android:text="Cancel"
         android:backgroundTint="@color/red"/>
 
+    <CheckBox
+        android:id="@+id/rememberMe"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pwd"
+
+
+        android:text="Remember me" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="41dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="311dp"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@drawable/password" />
 
 
 </RelativeLayout>

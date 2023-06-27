@@ -47,11 +47,16 @@ public class Order_Summary extends AppCompatActivity {
     }
 
     public void orderPlaced(View view) {
+        startService(new Intent(this, AlarmService.class));
         Toast.makeText(this, "Order Placed", Toast.LENGTH_LONG).show();
+       // Intent intent = new Intent(this,AlarmService.class);
+        //startService(intent);
+
         NotificationCompat.Builder notification = new NotificationCompat.Builder(this, "Channel ID");
         notification.setSmallIcon(imageInNotification);
         notification.setContentTitle("Asso");
         notification.setContentText("Order Placed Succesfully!");
+
 
 
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
@@ -72,6 +77,7 @@ public class Order_Summary extends AppCompatActivity {
     public void toWelcome(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
 
     }
 }

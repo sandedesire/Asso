@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         email = findViewById(R.id.email);
+
         pwd = findViewById(R.id.pwd);
         error = findViewById(R.id.error);
         DB_User = new DB_Users(this);
